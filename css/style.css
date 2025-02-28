@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -128,35 +129,47 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
-@media screen and (max-width:768px){
-    .container{
+/* visualizzazione tablet */
+
+@media screen and (max-width:768px) {
+    .container {
         max-width: 100%;
     }
 }
 
+/* visualizzazione smartphone */
 
-
-@media screen and (max-width:480px){
-    .container{
+@media screen and (max-width:480px) {
+    .container {
         max-width: 100%;
     }
-    .row{
-        display:flex;
+
+    .row {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .why-us{
-        background-color:#222222;
+    .why-us {
+        background-color: #222222;
         margin: 0;
         padding: 0;
     }
-    
-    .steps{
+
+    .steps {
         margin: 0;
     }
-    
-    .col{
+
+    .col {
         min-width: 100%;
     }
 }
+
+/* BONUS */
+
+@media screen and (min-width: 768px) and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+}
+
